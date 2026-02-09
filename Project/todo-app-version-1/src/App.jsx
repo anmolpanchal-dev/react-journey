@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import AppName from "./components/AppName";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <center className="todo-Container">
+      <AppName />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6"><input type="text" placeholder="Enter Todo Here" /></div>
+          <div class="col-4"><input type="date" name="date" /></div>
+          <div class="col-2"><button type="button" class="btn btn-success">Add</button></div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div class="container text-center">
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6">Buy Milk</div>
+          <div class="col-4">4/10/2023</div>
+          <div class="col-2"><button type="button" class="btn btn-danger">Delete</button></div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6">Go to College</div>
+          <div class="col-4">5/10/2025</div>
+          <div class="col-2"><button type="button" class="btn btn-danger">Delete</button></div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6">Early to bed</div>
+          <div class="col-4">7/11/2026</div>
+          <div class="col-2"><button type="button" class="btn btn-danger">Delete</button></div>
+        </div>
+      </div>
+      </center>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
