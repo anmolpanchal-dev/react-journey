@@ -1,10 +1,23 @@
-h1{
-    color: #123456;
+* {
+  margin-bottom: 10px;
 }
-button{
-    background-color: #123456;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+h1 {
+  background-color: #84a4c4;
+}
+
+input {
+  width: 100%;
+}
+.row{
+    text-align: left;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.todo-Container {
+  text-align: left;
 }

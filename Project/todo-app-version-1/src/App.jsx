@@ -6,12 +6,12 @@ function App() {
   return (
     <>
     <center className="todo-Container">
-      <AppName />
+      <center><AppName /></center>
       <AddTodo />
       <TodoItem />
       <TodoItem />
       <TodoItem /> 
-      </center>
+    </center>
     </>
   );
 }
